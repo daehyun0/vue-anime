@@ -1,8 +1,5 @@
 import anime from 'animejs/lib/anime.es.js'
 
-(function() {
-'use strict';
-
 function install(Vue) {
   Vue.directive('anime', {
     bind: function bind(targets, binding) {
@@ -17,7 +14,6 @@ function install(Vue) {
   Vue.prototype.$anime = anime;
 }
 
-module.exports = {
-  install: install
-};
-})();
+export default {
+  install
+}
