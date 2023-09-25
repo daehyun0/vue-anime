@@ -20,11 +20,11 @@ if (isVue2) {
 } else {
   install = function (app, options) {
     app.directive('anime', {
-      bind: function bind(targets, binding) {
+      created: function bind(targets, binding) {
         var opts = Object.assign({}, binding.value, { targets: targets });
         anime(opts);
       },
-      update: function bind(targets, binding) {
+      beforeUpdate: function bind(targets, binding) {
         var opts = Object.assign({}, binding.value, { targets: targets });
         anime(opts);
       }
