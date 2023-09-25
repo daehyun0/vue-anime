@@ -29,7 +29,7 @@ if (isVue2) {
         anime(opts);
       }
     });
-    app.prototype.$anime = anime;
+    app.config.globalProperties.$anime = anime
   }
 }
 
