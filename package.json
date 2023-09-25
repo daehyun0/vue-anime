@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/BenAHammond/vue-anime#readme",
   "dependencies": {
-    "animejs": "~3"
+    "animejs": "~3",
+    "vue-demi": "^0.14.6"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.28",
